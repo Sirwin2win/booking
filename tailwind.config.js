@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-image": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/compound2.avif')",
+        "hero-about": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/chat.avif')",
+        "hero-contact": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/customerService.avif')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
