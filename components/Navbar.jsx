@@ -5,10 +5,21 @@ import Image from "next/image";
 import leather from "../assets/images/leather.jpg";
 import { BiMenu, BiX } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
+import { useRouter } from "next/navigation";
+import destroySession from "@/app/actions/destroySession";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
+  const router = useRouter();
+  const handleLogout = async () => {
+    const { success, error } = await destroySession();
+    if (success) {
+      router.push("/login");
+    } else {
+      console.log("Logout Error");
+    }
+  };
 
   // Toggle function to handle the navbar's display
   const handleNav = () => {
@@ -21,8 +32,14 @@ const Navbar = () => {
     { id: 2, to: "/about", txt: "About" },
     { id: 3, to: "/contact", txt: "Contact" },
     { id: 4, to: "/rooms", txt: "Rooms" },
-    { id: 5, to: "/blog", txt: "Blog" },
+    { id: 5, to: "/manageRooms", txt: "Manage Rooms" },
+    // { id: 6, to: "/blog", txt: "Blog" },
+    { id: 6, to: "/login", txt: "Login" },
+    { id: 7, to: { handleLogout }, txt: "LogOut" },
   ];
+
+  // Handle Logout
+
   return (
     <div className="bg-white-0 z-50">
       <nav className="relative md:mb-0 border-gray-200 dark:bg-gray-900">

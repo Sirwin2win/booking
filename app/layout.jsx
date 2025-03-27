@@ -11,6 +11,8 @@ import GalleryOne from "@/components/GalleryOne";
 import Footer from "@/components/Footer";
 import GalleryTwo from "@/components/GalleryTwo";
 import GalleryThree from "@/components/GalleryThree";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // const roboto = Roboto({
 //   weight: ["400", "700"],
 //   subsets: ["latin"],
@@ -63,6 +65,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );

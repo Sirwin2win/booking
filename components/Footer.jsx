@@ -16,10 +16,10 @@ const Footer = () => {
           your bed. Check out our facilities and book at ease
         </p>
         <div className="flex">
-          <FaXTwitter className="text-white rounded-full bg-blue-400 h-[30px] w-[30px]" />
-          <FaFacebookF className="text-white rounded-full mx-4 bg-blue-400 h-[30px] w-[30px]" />
-          <FaInstagram className="text-white rounded-full bg-blue-400 h-[30px] w-[30px]" />
-          <FaLinkedinIn className="text-white rounded-full ml-5 bg-blue-400 h-[30px] w-[30px] " />
+          <FaXTwitter className="text-white rounded-full bg-blue-400 h-[50px] w-[50px] p-2" />
+          <FaFacebookF className="text-white rounded-full mx-4 bg-blue-400 h-[50px] w-[50px] p-2" />
+          <FaInstagram className="text-white rounded-full bg-blue-400 h-[50px] w-[50px] p-2" />
+          <FaLinkedinIn className="text-white rounded-full ml-5 bg-blue-400 h-[50px] w-[50px] p-2 " />
         </div>
       </div>
       <div className="col-md-3">
