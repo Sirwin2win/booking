@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-image": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/compound2.avif')",
+        "hero-home": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/compound2.avif')",
+        "hero-room": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/room06.jpeg')",
         "hero-about": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/chat.avif')",
+        "hero-rooms": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/room2.avif')",
         "hero-contact": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/customerService.avif')",
       },
       colors: {
