@@ -13,6 +13,8 @@ module.exports = {
         "hero-about": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/chat.avif')",
         "hero-rooms": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/room2.avif')",
         "hero-contact": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/customerService.avif')",
+        "hero-reg": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/reg.avif')",
+        "hero-amen": "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url('../../assets/images/amen.avif')",
       },
       colors: {
         background: "var(--background)",

@@ -35,7 +35,7 @@ const Navbar = () => {
     { id: 5, to: "/manageRooms", txt: "Manage Rooms" },
     // { id: 6, to: "/blog", txt: "Blog" },
     { id: 6, to: "/login", txt: "Login" },
-    { id: 7, to: { handleLogout }, txt: "LogOut" },
+    { id: 7, to: "/register", txt: "Register" },
   ];
 
   // Handle Logout
