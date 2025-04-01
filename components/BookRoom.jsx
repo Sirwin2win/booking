@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import bookRoom from "@/app/actions/bookRoom";
 import { useActionState } from "react";
 import { toast } from "react-toastify";
-import { usePaystackPayment } from "react-paystack";
+// import { usePaystackPayment } from "react-paystack";
 
 const BookRoom = ({ room }) => {
   const [state, formAction] = useActionState(bookRoom, {});
@@ -15,8 +15,9 @@ const BookRoom = ({ room }) => {
   }, [state]);
   return (
     <div>
-      <form action={formAction} className="px-[200px] mb-5">
-        <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+      {/* <div className="md:w-[500px] md:ml-[320px] bg-gray-200 content-center my-5"> */}
+      <form action={formAction} className="px-[100px] md:px-[200px] mb-5">
+        <div className="md:grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-6">
           <div className="mb-2 md:col-span-3">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -94,6 +95,7 @@ const BookRoom = ({ room }) => {
         </button>
       </form>
     </div>
+    // </div>
   );
 };
 
