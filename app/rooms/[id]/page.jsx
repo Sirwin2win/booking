@@ -28,7 +28,7 @@ const page = async ({ params }) => {
         <div className="px-5">
           <p className="font-bold text-2xl text-blue-700">{room.name}</p>
           <p className="block text-gray-500">{room.description}</p>
-          <p className="block text-gray-500">${}</p>
+          <p className="block text-gray-500">${room.price_per_hour}</p>
           <p className="block text-gray-500">{room.address}</p>
           <p className="block text-gray-500">{room.amenities}</p>
           <p className="italic text-gray-500">{room.availability}</p>

@@ -14,7 +14,7 @@ const page = () => {
     if (state.error) toast.error(state.error);
     if (state.success) {
       toast.success("You're logged in successfully!");
-      // router.push(lastLocation.pathname);
+      router.back();
     }
   }, [state]);
   return (
